@@ -14,6 +14,10 @@
 
 /* NAVBAR */
 
+.navbar {
+  border-radius: 40px 0 40px 0;
+}
+
 .navbar-nav {
   margin-left: auto;
   margin-right: auto;
@@ -42,7 +46,7 @@
 
 .nav-item a:hover {
   background-color: rgb(148, 0, 0);
-  transition: all 0.75s;
+  transition: ease-in-out 0.5s;
 }
 
 .nav-item a {
@@ -63,7 +67,8 @@
   width: 20px;
   height: 20px;
   margin: 3px 0px 3px 0px;
-  position: relative;
+  margin-left: auto;
+  margin-right: 20px;
   transition: 0.5s ease-in-out;
 }
 
@@ -139,14 +144,63 @@
 }
 
 .navbar-toggler.collapsed .toggler-icon {
-  background: linear-gradient(263deg, rgb(148, 0, 0), rgb(116, 35, 38));
+  background: linear-gradient(263deg, rgb(255, 255, 255), rgb(255, 255, 255));
+}
+
+.dropbtn {
+  background-color: rgb(116, 35, 38);
+  font-weight: 500;
+  color: white;
+  border: none;
+  padding: 0.5em;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 0.5em;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(148, 0, 0);
+  transition: ease-in-out 0.5s;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: rgb(148, 0, 0);
+  transition: ease-in-out 0.5s;
+  cursor: pointer;
+}
+
+/* HOME */
+.headerImg {
+  width: 98.15%;
+  margin-top: -48px;
+  border-radius: 40px 0 0 0;
+}
+
+/* ABOUT US */
+.about {
+  margin: 20px;
 }
 
 /* FOOTER */
 .footer {
-  /* position: absolute;
-  bottom: 0; */
-  margin-top: 100px;
+  position: absolute;
+  bottom: 0;
+  /* margin-top: 600px; */
   width: 100%;
   margin-bottom: 0.5rem;
 }
@@ -156,8 +210,43 @@
   width: 25%;
 }
 
+@media screen and (max-width: 1399px) {
+  .logo {
+    width: 60%;
+  }
+  .headerImg {
+    width: 97.9%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .headerImg {
+    width: 97.45%;
+  }
+}
+
 @media screen and (max-width: 991px) {
+  .logo {
+    width: 65%;
+  }
   .navbar-nav {
     text-align: center;
+  }
+  .navbar {
+    background-color: rgb(116, 35, 38);
+  }
+  .dropdown-content a {
+    background-color: rgb(146, 62, 62);
+  }
+  .headerImg {
+    width: 100%;
+    margin-top: -42px;
+    border-radius: 40px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .logo {
+    width: 80%;
   }
 }

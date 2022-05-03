@@ -4,7 +4,6 @@ function Footer() {
   return (
     <div className="footer">
       <div class="container">
-        <div class="navbar"></div>
         <div class="footerContent">
           <Logo />
         </div>

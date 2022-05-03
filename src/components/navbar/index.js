@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Logo from "../Logo";
-import App from "../../App";
+import Home from "../../pages/Home";
 import About from "../../pages/About";
 import Residential from "../../pages/Residential";
 import Commercial from "../../pages/Commercial";
@@ -10,8 +10,8 @@ function NavBar() {
   const [currentPage, setCurrentPage] = useState("Home");
 
   const renderPage = () => {
-    if (currentPage === "") {
-      return <App />;
+    if (currentPage === "Home") {
+      return <Home />;
     }
     if (currentPage === "About") {
       return <About />;
@@ -53,7 +53,12 @@ function NavBar() {
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a href="" id="one" class="nav-link active">
+                  <a
+                    href="#home"
+                    onClick={() => handlePageChange("Home")}
+                    id="one"
+                    class="nav-link active"
+                  >
                     HOME
                   </a>
                 </li>
@@ -68,24 +73,22 @@ function NavBar() {
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a
-                    href="#residential"
-                    onClick={() => handlePageChange("Residential")}
-                    id="three"
-                    class="nav-link active"
-                  >
-                    RESIDENTIAL
-                  </a>
+                  <div class="dropdown">
+                    <div class="dropbtn">RESIDENTIAL</div>
+                    <div class="dropdown-content">
+                      <a href="#">EXTERIOR</a>
+                      <a href="#">INTERIOR</a>
+                    </div>
+                  </div>
                 </li>
                 <li class="nav-item">
-                  <a
-                    href="#commercial"
-                    onClick={() => handlePageChange("Commercial")}
-                    id="four"
-                    class="nav-link active"
-                  >
-                    COMMERCIAL
-                  </a>
+                  <div class="dropdown">
+                    <div class="dropbtn">COMMERCIAL</div>
+                    <div class="dropdown-content">
+                      <a href="#">EXTERIOR</a>
+                      <a href="#">INTERIOR</a>
+                    </div>
+                  </div>
                 </li>
                 <li class="nav-item">
                   <a
@@ -101,8 +104,8 @@ function NavBar() {
             </div>
           </div>
         </nav>
+        {renderPage()}
       </div>
-      {renderPage()}
     </div>
   );
 }
