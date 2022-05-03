@@ -33,26 +33,10 @@
 }
 
 .navbar-nav li #one {
-  /* border: 1px solid black; */
   border-radius: 40px 0 0 0;
 }
 
-.navbar-nav li #two {
-  /* border-top: 1px solid black; */
-  /* border-bottom: 1px solid black; */
-}
-
-.navbar-nav li #three {
-  /* border: 1px solid black; */
-}
-
-.navbar-nav li #four {
-  /* border-top: 1px solid black; */
-  /* border-bottom: 1px solid black; */
-}
-
 .navbar-nav li #five {
-  /* border: 1px solid black; */
   border-radius: 0 0 40px 0;
 }
 
@@ -160,8 +144,9 @@
 
 /* FOOTER */
 .footer {
-  position: absolute;
-  bottom: 0;
+  /* position: absolute;
+  bottom: 0; */
+  margin-top: 100px;
   width: 100%;
   margin-bottom: 0.5rem;
 }

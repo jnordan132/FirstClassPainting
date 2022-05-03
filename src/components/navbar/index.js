@@ -1,6 +1,34 @@
+import React, { useState } from "react";
 import Logo from "../Logo";
+import App from "../../App";
+import About from "../../pages/About";
+import Residential from "../../pages/Residential";
+import Commercial from "../../pages/Commercial";
+import Contact from "../../pages/Contact";
 
 function NavBar() {
+  const [currentPage, setCurrentPage] = useState("Home");
+
+  const renderPage = () => {
+    if (currentPage === "") {
+      return <App />;
+    }
+    if (currentPage === "About") {
+      return <About />;
+    }
+    if (currentPage === "Residential") {
+      return <Residential />;
+    }
+    if (currentPage === "Commercial") {
+      return <Commercial />;
+    }
+    if (currentPage === "Contact") {
+      return <Contact />;
+    }
+  };
+
+  const handlePageChange = (page) => setCurrentPage(page);
+
   return (
     <div className="nav">
       <div className="logo">
@@ -30,22 +58,42 @@ function NavBar() {
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="" id="two" class="nav-link active">
+                  <a
+                    href="#about"
+                    onClick={() => handlePageChange("About")}
+                    id="two"
+                    class="nav-link active"
+                  >
                     ABOUT US
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="" id="three" class="nav-link active">
+                  <a
+                    href="#residential"
+                    onClick={() => handlePageChange("Residential")}
+                    id="three"
+                    class="nav-link active"
+                  >
                     RESIDENTIAL
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="" id="four" class="nav-link active">
+                  <a
+                    href="#commercial"
+                    onClick={() => handlePageChange("Commercial")}
+                    id="four"
+                    class="nav-link active"
+                  >
                     COMMERCIAL
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="" id="five" class="nav-link active">
+                  <a
+                    href="#contact"
+                    onClick={() => handlePageChange("Contact")}
+                    id="five"
+                    class="nav-link active"
+                  >
                     CONTACT US
                   </a>
                 </li>
@@ -54,6 +102,7 @@ function NavBar() {
           </div>
         </nav>
       </div>
+      {renderPage()}
     </div>
   );
 }
