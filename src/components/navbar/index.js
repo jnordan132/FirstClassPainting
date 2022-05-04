@@ -2,10 +2,8 @@ import React, { useState } from "react";
 import Logo from "../Logo";
 import Home from "../../pages/Home";
 import About from "../../pages/About";
-import Residential from "../../pages/Residential";
 import ResInterior from "../../pages/ResInterior";
 import ResExterior from "../../pages/ResExterior";
-import Commercial from "../../pages/Commercial";
 import ComInterior from "../../pages/ComInterior";
 import ComExterior from "../../pages/ComExterior";
 import Contact from "../../pages/Contact";
@@ -20,17 +18,11 @@ function NavBar() {
     if (currentPage === "About") {
       return <About />;
     }
-    if (currentPage === "Residential") {
-      return <Residential />;
-    }
     if (currentPage === "ResInterior") {
       return <ResInterior />;
     }
     if (currentPage === "ResExterior") {
       return <ResExterior />;
-    }
-    if (currentPage === "Commercial") {
-      return <Commercial />;
     }
     if (currentPage === "ComInterior") {
       return <ComInterior />;
