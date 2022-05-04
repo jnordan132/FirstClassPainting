@@ -204,6 +204,26 @@
 .about {
   margin: 20px;
 }
+/* CONTACT */
+.form-control {
+  background-color: rgb(216, 216, 216);
+}
+
+.form-control:focus {
+  border-color: rgb(116, 35, 38);
+  background-color: rgb(216, 216, 216);
+  box-shadow: 0 0 0 0.2rem rgb(116, 35, 38, 0.5);
+}
+
+.contact .btn {
+  background-color: rgb(116, 35, 38);
+  color: white;
+  border: black;
+}
+
+.contact .btn:focus {
+  box-shadow: 0 0 0 0.2rem rgb(116, 35, 38, 0.5);
+}
 
 /* FOOTER */
 .footer {
