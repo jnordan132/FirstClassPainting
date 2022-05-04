@@ -6,10 +6,10 @@ function Contact() {
 
     emailjs
       .sendForm(
-        "service_r0p51mi",
-        "template_s3t8o7i",
+        process.env.SERVICE_ID,
+        process.env.TEMPLATE_ID,
         e.target,
-        "BLuaANkIVDp-xGtFS"
+        process.env.EMAIL_ID
       )
       .then(
         (result) => {
