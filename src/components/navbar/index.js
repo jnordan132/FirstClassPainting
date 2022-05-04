@@ -3,7 +3,11 @@ import Logo from "../Logo";
 import Home from "../../pages/Home";
 import About from "../../pages/About";
 import Residential from "../../pages/Residential";
+import ResInterior from "../../pages/ResInterior";
+import ResExterior from "../../pages/ResExterior";
 import Commercial from "../../pages/Commercial";
+import ComInterior from "../../pages/ComInterior";
+import ComExterior from "../../pages/ComExterior";
 import Contact from "../../pages/Contact";
 
 function NavBar() {
@@ -19,8 +23,20 @@ function NavBar() {
     if (currentPage === "Residential") {
       return <Residential />;
     }
+    if (currentPage === "ResInterior") {
+      return <ResInterior />;
+    }
+    if (currentPage === "ResExterior") {
+      return <ResExterior />;
+    }
     if (currentPage === "Commercial") {
       return <Commercial />;
+    }
+    if (currentPage === "ComInterior") {
+      return <ComInterior />;
+    }
+    if (currentPage === "ComExterior") {
+      return <ComExterior />;
     }
     if (currentPage === "Contact") {
       return <Contact />;
@@ -74,19 +90,43 @@ function NavBar() {
                 </li>
                 <li class="nav-item">
                   <div class="dropdown">
-                    <div class="dropbtn">RESIDENTIAL</div>
+                    <div class="dropbtn">
+                      RESIDENTIAL <div className="arrow">&#9660;</div>
+                    </div>
                     <div class="dropdown-content">
-                      <a href="#">EXTERIOR</a>
-                      <a href="#">INTERIOR</a>
+                      <a
+                        href="#comercial/exterior"
+                        onClick={() => handlePageChange("ResExterior")}
+                      >
+                        EXTERIOR
+                      </a>
+                      <a
+                        href="#comercial/interior"
+                        onClick={() => handlePageChange("ResInterior")}
+                      >
+                        INTERIOR
+                      </a>
                     </div>
                   </div>
                 </li>
                 <li class="nav-item">
                   <div class="dropdown">
-                    <div class="dropbtn">COMMERCIAL</div>
+                    <div class="dropbtn">
+                      COMMERCIAL <div className="arrow">&#9660;</div>
+                    </div>
                     <div class="dropdown-content">
-                      <a href="#">EXTERIOR</a>
-                      <a href="#">INTERIOR</a>
+                      <a
+                        href="#comercial/exterior"
+                        onClick={() => handlePageChange("ComExterior")}
+                      >
+                        EXTERIOR
+                      </a>
+                      <a
+                        href="#comercial/interior"
+                        onClick={() => handlePageChange("ComInterior")}
+                      >
+                        INTERIOR
+                      </a>
                     </div>
                   </div>
                 </li>

@@ -96,7 +96,7 @@
   position: absolute;
   height: 3px;
   width: 100%;
-  background: #d3301a;
+  background: #ffffff;
   border-radius: 1px;
   opacity: 1;
   left: 0;
@@ -148,11 +148,20 @@
 }
 
 .dropbtn {
+  display: flex;
+  justify-content: center;
   background-color: rgb(116, 35, 38);
   font-weight: 500;
   color: white;
   border: none;
   padding: 0.5em;
+}
+
+.arrow {
+  font-size: 55%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 5px;
 }
 
 .dropdown-content {
