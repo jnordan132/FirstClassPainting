@@ -5,7 +5,7 @@ function Footer() {
     <div className="footer">
       <div class="container">
         <div class="footerContent">
-          <Logo />
+          <Logo className="footerLogo" />
         </div>
         <p>©2022 First Class Painting, All Rights Reserved</p>
       </div>

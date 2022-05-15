@@ -14,34 +14,26 @@
 
 /* NAVBAR */
 
-.navbar {
-  border-radius: 40px 0 40px 0;
-}
-
 .navbar-nav {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+  width: 100vw;
 }
 
-.navbar-nav ul {
-  border-radius: 12px;
+.nav .logo {
+  float: left;
+  margin: 0 auto;
+  margin-left: 1rem;
+}
+
+.container-fluid {
+  padding: 0;
 }
 
 .navbar-nav li {
-  width: 100%;
+  width: 100vw;
 }
 
 .navbar-nav a {
   background-color: rgb(116, 35, 38);
-}
-
-.navbar-nav li #one {
-  border-radius: 40px 0 0 0;
-}
-
-.navbar-nav li #five {
-  border-radius: 0 0 40px 0;
 }
 
 .nav-item a:hover {
@@ -195,9 +187,10 @@
 
 /* HOME */
 .headerImg {
-  width: 98.15%;
-  margin-top: -48px;
-  border-radius: 40px 0 0 0;
+  width: 100vw;
+  height: 50vh;
+  object-fit: cover;
+  margin-top: -1rem;
 }
 
 /* ABOUT US */
@@ -229,7 +222,6 @@
 .footer {
   position: absolute;
   bottom: 0;
-  /* margin-top: 600px; */
   width: 100%;
   margin-bottom: 0.5rem;
 }
@@ -242,15 +234,6 @@
 @media screen and (max-width: 1399px) {
   .logo {
     width: 60%;
-  }
-  .headerImg {
-    width: 97.9%;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .headerImg {
-    width: 97.45%;
   }
 }
 
@@ -270,7 +253,6 @@
   .headerImg {
     width: 100%;
     margin-top: -42px;
-    border-radius: 40px 0 0 0;
   }
 }
 

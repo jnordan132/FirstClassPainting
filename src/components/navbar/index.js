@@ -42,7 +42,7 @@ function NavBar() {
       <div className="logo">
         <Logo />
       </div>
-      <div class="container">
+      <div class="container-fullwidth">
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container-fluid">
             <button
