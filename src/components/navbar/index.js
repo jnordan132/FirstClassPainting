@@ -39,8 +39,20 @@ function NavBar() {
 
   return (
     <div className="nav">
-      <div className="logo">
-        <Logo />
+      <div className="mainInfo">
+        <div className="logo">
+          <Logo />
+        </div>
+        <div className="callForEst">
+          <div>
+            <h6>
+              <b>Call For A Quote Today</b>
+            </h6>
+            <h2>
+              <b>(910)-555-2893</b>
+            </h2>
+          </div>
+        </div>
       </div>
       <div class="container-fullwidth">
         <nav class="navbar navbar-expand-lg navbar-light">

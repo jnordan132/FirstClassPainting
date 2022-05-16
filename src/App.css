@@ -7,9 +7,24 @@
 /* LOGO */
 
 .logo {
-  width: 50%;
+  width: 75%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.mainInfo {
+  display: flex;
+}
+
+.callForEst {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.callForEst div {
+  cursor: default;
+  width: 250px;
+  color: rgb(116, 35, 38);
 }
 
 /* NAVBAR */
@@ -18,7 +33,7 @@
   width: 100vw;
 }
 
-.nav .logo {
+.mainInfo .logo {
   float: left;
   margin: 0 auto;
   margin-left: 1rem;
@@ -196,7 +211,27 @@
 /* ABOUT US */
 .about {
   margin: 20px;
+  display: flex;
+  margin-right: 15rem;
+  margin-left: 15rem;
 }
+
+.about img {
+  height: 400px;
+}
+
+.about h1 {
+  text-align: left;
+  margin-left: 4rem;
+  margin-bottom: 1rem;
+}
+
+.about h5 {
+  margin-left: 4rem;
+  margin-right: 4rem;
+  text-align: left;
+}
+
 /* CONTACT */
 .form-control {
   background-color: rgb(216, 216, 216);
@@ -220,10 +255,7 @@
 
 /* FOOTER */
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  margin-bottom: 0.5rem;
+  margin-top: auto;
 }
 
 .footer img {
