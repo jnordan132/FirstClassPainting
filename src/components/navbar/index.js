@@ -1,4 +1,4 @@
-import React, { useState } from "React";
+import React from "react";
 import Logo from "../Logo";
 
 function NavBar() {
