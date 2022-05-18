@@ -1,42 +1,7 @@
 import React, { useState } from "react";
 import Logo from "../Logo";
-import Home from "../../pages/Home";
-import About from "../../pages/About";
-import ResInterior from "../../pages/ResInterior";
-import ResExterior from "../../pages/ResExterior";
-import ComInterior from "../../pages/ComInterior";
-import ComExterior from "../../pages/ComExterior";
-import Contact from "../../pages/Contact";
 
 function NavBar() {
-  const [currentPage, setCurrentPage] = useState("Home");
-
-  const renderPage = () => {
-    if (currentPage === "Home") {
-      return <Home />;
-    }
-    if (currentPage === "About") {
-      return <About />;
-    }
-    if (currentPage === "ResInterior") {
-      return <ResInterior />;
-    }
-    if (currentPage === "ResExterior") {
-      return <ResExterior />;
-    }
-    if (currentPage === "ComInterior") {
-      return <ComInterior />;
-    }
-    if (currentPage === "ComExterior") {
-      return <ComExterior />;
-    }
-    if (currentPage === "Contact") {
-      return <Contact />;
-    }
-  };
-
-  const handlePageChange = (page) => setCurrentPage(page);
-
   return (
     <div className="nav">
       <div className="mainInfo">
@@ -73,22 +38,12 @@ function NavBar() {
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a
-                    href="#home"
-                    onClick={() => handlePageChange("Home")}
-                    id="one"
-                    class="nav-link active"
-                  >
+                  <a href="/" class="nav-link active">
                     HOME
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a
-                    href="#about"
-                    onClick={() => handlePageChange("About")}
-                    id="two"
-                    class="nav-link active"
-                  >
+                  <a href="/about" class="nav-link active">
                     ABOUT US
                   </a>
                 </li>
@@ -98,18 +53,8 @@ function NavBar() {
                       RESIDENTIAL <div className="arrow">&#9660;</div>
                     </div>
                     <div class="dropdown-content">
-                      <a
-                        href="#comercial/exterior"
-                        onClick={() => handlePageChange("ResExterior")}
-                      >
-                        EXTERIOR
-                      </a>
-                      <a
-                        href="#comercial/interior"
-                        onClick={() => handlePageChange("ResInterior")}
-                      >
-                        INTERIOR
-                      </a>
+                      <a href="/residential/exterior">EXTERIOR</a>
+                      <a href="/residential/interior">INTERIOR</a>
                     </div>
                   </div>
                 </li>
@@ -119,28 +64,13 @@ function NavBar() {
                       COMMERCIAL <div className="arrow">&#9660;</div>
                     </div>
                     <div class="dropdown-content">
-                      <a
-                        href="#comercial/exterior"
-                        onClick={() => handlePageChange("ComExterior")}
-                      >
-                        EXTERIOR
-                      </a>
-                      <a
-                        href="#comercial/interior"
-                        onClick={() => handlePageChange("ComInterior")}
-                      >
-                        INTERIOR
-                      </a>
+                      <a href="/commercial/exterior">EXTERIOR</a>
+                      <a href="/commercial/interior">INTERIOR</a>
                     </div>
                   </div>
                 </li>
                 <li class="nav-item">
-                  <a
-                    href="#contact"
-                    onClick={() => handlePageChange("Contact")}
-                    id="five"
-                    class="nav-link active"
-                  >
+                  <a href="/contact" class="nav-link active">
                     CONTACT US
                   </a>
                 </li>
@@ -148,7 +78,6 @@ function NavBar() {
             </div>
           </div>
         </nav>
-        {renderPage()}
       </div>
     </div>
   );
