@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  overflow-x: hidden;
 }
 
 /* rgb(116, 35, 38) */
@@ -206,6 +207,34 @@
   height: 50vh;
   object-fit: cover;
   margin-top: -1rem;
+}
+
+.whyUs {
+  margin-top: 4.5rem;
+  margin-bottom: 2rem;
+  text-align: left;
+  margin-left: 18rem;
+  margin-right: 18rem;
+}
+
+.whyUs h1 {
+  margin-bottom: 1rem;
+  color: rgb(116, 35, 38);
+}
+
+.whyUs h5 {
+  line-height: 1.85rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.images {
+  margin: auto;
+  padding: 6rem;
+  background-color: grey;
+  color: white;
 }
 
 /* ABOUT US */

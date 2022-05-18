@@ -3,7 +3,7 @@ import stockPhoto from "../../assets/StockPhoto1.jpg";
 function About() {
   return (
     <div className="about">
-      <img src={stockPhoto}></img>
+      <img alt="stock image one" src={stockPhoto}></img>
       <section>
         <h1>About Us</h1>
         <h5>

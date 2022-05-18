@@ -7,7 +7,7 @@ function Footer() {
         <div class="footerContent">
           <Logo className="footerLogo" />
         </div>
-        <p>©2022 First Class Painting LLC, All Rights Reserved</p>
+        <p>©2022 First Class Painting, LLC - All Rights Reserved</p>
       </div>
     </div>
   );
