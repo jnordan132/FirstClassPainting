@@ -1,6 +1,6 @@
 import Logo from "../Logo";
 
-function Change() {
+function Nav() {
   return (
     <div className="nav">
       <div className="mainInfo">
@@ -82,4 +82,4 @@ function Change() {
   );
 }
 
-export default Change;
+export default Nav;
