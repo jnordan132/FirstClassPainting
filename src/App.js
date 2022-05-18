@@ -1,7 +1,7 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // Component || Page Imports
-import Navbar from "./components/Navbar";
+// import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import ResExterior from "./pages/ResExterior";
@@ -14,7 +14,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      {/* <Navbar /> */}
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
