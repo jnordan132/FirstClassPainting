@@ -8,7 +8,7 @@ import ResInterior from "./pages/ResInterior";
 import ComExterior from "./pages/ComExterior";
 import ComInterior from "./pages/ComInterior";
 import Contact from "./pages/Contact";
-import NavBar from "./components/NavBar";
+import NavBar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 function App() {

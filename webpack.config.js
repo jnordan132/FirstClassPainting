@@ -20,8 +20,8 @@ module.exports = {
 
   // Bundle to our dist folder as a main.js file.
   output: {
-    path: path.join(__dirname, "dist"),
-    filename: "main.js",
+    path: path.join(__dirname, "src"),
+    filename: "app.js",
     publicPath: "/",
   },
 

@@ -1,6 +1,6 @@
 import Logo from "../Logo";
 
-function NavBar() {
+function Navbar() {
   return (
     <div className="nav">
       <div className="mainInfo">
@@ -82,4 +82,4 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+export default Navbar;
