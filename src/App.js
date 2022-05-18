@@ -8,13 +8,13 @@ import ResInterior from "./pages/ResInterior";
 import ComExterior from "./pages/ComExterior";
 import ComInterior from "./pages/ComInterior";
 import Contact from "./pages/Contact";
-import NavBar from "./components/Navbar";
+import Change from "./components/Change";
 import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
+      <Change />
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
