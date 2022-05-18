@@ -1,7 +1,6 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // Component || Page Imports
-import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import ResExterior from "./pages/ResExterior";
@@ -9,6 +8,7 @@ import ResInterior from "./pages/ResInterior";
 import ComExterior from "./pages/ComExterior";
 import ComInterior from "./pages/ComInterior";
 import Contact from "./pages/Contact";
+import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 
 function App() {
