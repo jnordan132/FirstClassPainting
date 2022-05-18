@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../Logo";
 
-function Navbar() {
+function NavBar() {
   return (
     <div className="nav">
       <div className="mainInfo">
@@ -83,4 +83,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default NavBar;
