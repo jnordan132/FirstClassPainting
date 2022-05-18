@@ -2,6 +2,10 @@
   "name": "firstclasspainting",
   "version": "0.1.0",
   "private": true,
+  "engines" : { 
+    "npm" : ">=7.0.0",
+    "node" : ">=16.0.0"
+  },
   "dependencies": {
     "@apollo/client": "^3.6.2",
     "@react-google-maps/api": "^2.10.2",
