@@ -1,4 +1,4 @@
-import stockPhoto from "../../assets/StockPhoto1.jpg";
+import stockPhoto from "../../assets/images/StockPhoto1.jpg";
 
 function About() {
   return (

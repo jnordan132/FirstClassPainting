@@ -1,4 +1,4 @@
-import fcpLogo from "../../assets/FCP_LOGO.png";
+import fcpLogo from "../../assets/images/400PngdpiLogoCropped.png";
 
 function Logo() {
   return (

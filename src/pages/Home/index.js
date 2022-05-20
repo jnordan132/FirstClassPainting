@@ -1,4 +1,4 @@
-import stockPhoto from "../../assets/StockPhoto2.jpg";
+import stockPhoto from "../../assets/images/StockPhoto2.jpg";
 
 function Home() {
   return (
@@ -8,11 +8,11 @@ function Home() {
         <h1>Why Hire Us?</h1>
         <h5>
           First Class Painting LLC is more then a painting company. We take
-          great pride in our ability to create results that not only satify you,
-          but provide the most desired outcome for your home or business. Here
-          at First Class Painting, we strive to provide the best customer
+          great pride in our ability to create results that not only satisfy
+          you, but provide the most desired outcome for your home or business.
+          Here at First Class Painting, we strive to provide the best customer
           service so that you have total control in what you receive. Our
-          experince provides a strong understanding of how to deliver the most
+          experience provides a strong understanding of how to deliver the most
           impactful services for your needs.
         </h5>
         <br />
@@ -23,8 +23,8 @@ function Home() {
             </li>
             <li>
               <h5>
-                We have 15+ years of experince painting residential & commercial
-                properties
+                We have 15+ years of experience painting residential &
+                commercial properties
               </h5>
             </li>
             <li>
@@ -34,7 +34,10 @@ function Home() {
               </h5>
             </li>
             <li>
-              <h5>We Accept most forms of payment - Cash/Debit/Credit</h5>
+              <h5>
+                We Accept most forms of payment - Cash/Debit/Credit/Online
+                Transfer
+              </h5>
             </li>
             <li>
               <h5>We ensure that the end result is exactly what is wanted</h5>

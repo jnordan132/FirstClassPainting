@@ -1,19 +1,24 @@
 import Logo from "../Logo";
 
 function Nav() {
+  function displayDropDown() {
+    // e.preventDefault();
+    console.log("Working");
+    // document.getElementsByClassName("dropdown-content").style.display = "block";
+  }
   return (
     <div className="nav">
       <div className="mainInfo">
-        <div className="logo">
+        <div className="logoInHeader">
           <Logo />
         </div>
         <div className="callForEst">
           <div>
             <h6>
-              <b>Call For A Quote Today</b>
+              <b>Call For A Free Quote</b>
             </h6>
             <h2>
-              <b>(910)-555-2893</b>
+              <b>(910)-746-3360</b>
             </h2>
           </div>
         </div>
@@ -58,7 +63,7 @@ function Nav() {
                   </div>
                 </li>
                 <li class="nav-item">
-                  <div class="dropdown">
+                  <div className="dropdown">
                     <div class="dropbtn">
                       COMMERCIAL <div className="arrow">&#9660;</div>
                     </div>
