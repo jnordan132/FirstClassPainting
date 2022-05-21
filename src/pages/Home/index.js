@@ -45,6 +45,21 @@ function Home() {
           </ul>
           <div className="images">image goes here</div>
         </div>
+        <br />
+        <br />
+        <h1>What We Can Do!</h1>
+        <h5>
+          First Class Painting LLC has the skill set to offer a wide variety of
+          services including, but not limited to both commercial and residential
+          interior and exterior painting. We always love a challenge so if
+          you're curious about if we can complete and be a part if your project
+          give us a call at <a href="tel:9107463360">(910)-746-3360</a> or send
+          us an email at{" "}
+          <a href="mailto:andrewsa@firstclasspaintingllc.org">
+            andrewsa@firstclasspaintingllc.org
+          </a>
+          .
+        </h5>
       </div>
     </div>
   );

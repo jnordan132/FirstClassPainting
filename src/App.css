@@ -3,6 +3,10 @@
   overflow-x: hidden;
 }
 
+a {
+  color: rgb(189, 55, 46);
+}
+
 /* rgb(116, 35, 38) */
 /* rgb(189, 55, 46) */
 
@@ -11,6 +15,12 @@
 .mainInfo {
   width: 100vw;
   display: flex;
+  margin-left: 1rem;
+}
+
+.callForEst {
+  margin-left: auto;
+  margin-right: 15rem;
 }
 
 .logoInHeader {
@@ -29,7 +39,7 @@
 .callForEst {
   margin-top: auto;
   margin-bottom: auto;
-  margin-left: 3rem;
+  /* margin-left: 3rem; */
 }
 
 .callForEst div {
@@ -314,43 +324,89 @@
   background-color: white;
 }
 
-@media screen and (max-width: 1450px) {
-}
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
 
 @media screen and (max-width: 1399px) {
   .logo {
     /* width: 20rem; */
   }
+  .whyUs {
+    margin-top: 2rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
 }
+
+/* LARGE TABLET */
 
 @media screen and (max-width: 991px) {
-  .logo {
-    /* width: 65%; */
+  .mainInfo {
+    width: 100vw;
+    margin-left: 2rem;
   }
-  .navbar-nav {
-    text-align: center;
-  }
-  .navbar {
-    background-color: rgb(116, 35, 38);
-  }
-  .dropdown-content a {
-    background-color: rgb(189, 55, 46);
+  .callForEst {
+    margin-left: auto;
+    margin-right: auto;
   }
   .headerImg {
-    width: 100%;
-    margin-top: 1rem;
+    margin-top: 0;
+  }
+  .navbar {
+    margin-bottom: 0.25rem;
+  }
+  .whyUs h1 {
+    text-align: center;
+  }
+  .whyUs h5 {
+    line-height: 1.5rem;
+  }
+  .whyUs {
+    margin-top: 2rem;
+    margin-left: 4.5rem;
+    margin-right: 4.5rem;
+  }
+  .images {
+    display: none;
   }
 }
 
-@media screen and (max-width: 859px) {
+/* TABLET */
+
+@media screen and (max-width: 820px) {
+  .mainInfo {
+    width: 100vw;
+    margin-left: 1rem;
+  }
+  .callForEst {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .headerImg {
-    padding-top: 1px;
+    margin-top: 0;
+  }
+  .navbar {
+    margin-bottom: 0.25rem;
+  }
+  .whyUs h1 {
+    text-align: center;
+  }
+  .whyUs h5 {
+    line-height: 1.5rem;
+  }
+  .whyUs {
+    margin-top: 2rem;
+    margin-left: 4.5rem;
+    margin-right: 4.5rem;
+  }
+  .images {
+    display: none;
   }
 }
 
 /* MOBILE */
-
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 475px) {
   .mainInfo {
     display: block;
     margin-left: auto;
@@ -375,6 +431,7 @@
   .callForEst div {
     font-size: 10px;
     margin-left: 0;
+    display: none;
   }
   .callForEst h6 {
     display: none;
