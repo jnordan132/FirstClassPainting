@@ -22,6 +22,9 @@ function Nav() {
             </h2>
           </div>
         </div>
+        <div className="motto">
+          <h1>We're Here to Help</h1>
+        </div>
       </div>
       <div class="container-fullwidth">
         <nav class="navbar navbar-expand-lg navbar-light">

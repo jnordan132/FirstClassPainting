@@ -21,7 +21,7 @@ router.get("/commercial/exterior", (req, res) => {
   res.sendFile(path.join(__dirname, "./src/pages/ComExterior/index.js"));
 });
 
-router.get("/commercial/exterior", (req, res) => {
+router.get("/commercial/interior", (req, res) => {
   res.sendFile(path.join(__dirname, "./src/pages/ComInterior/index.js"));
 });
 

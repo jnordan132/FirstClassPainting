@@ -19,8 +19,17 @@ a {
 }
 
 .callForEst {
+  margin-left: 5rem;
+  /* margin-right: 15rem; */
+}
+
+.motto {
+  margin-top: auto;
+  margin-bottom: auto;
+  color: white;
   margin-left: auto;
-  margin-right: 15rem;
+  margin-right: auto;
+  letter-spacing: 0.15rem;
 }
 
 .logoInHeader {
@@ -224,7 +233,7 @@ a {
 /* HOME */
 .headerImg {
   width: 100vw;
-  height: 50vh;
+  height: 43vh;
   object-fit: cover;
   margin-top: -1rem;
 }
@@ -255,6 +264,47 @@ a {
   padding: 6rem;
   background-color: grey;
   color: white;
+}
+
+.whatWeDo {
+  margin-top: 4rem;
+}
+
+.picLinks {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 1rem;
+  margin-bottom: 100px;
+  margin-top: 2rem;
+}
+
+.picCon {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgb(189, 55, 46);
+}
+
+.picLinks img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.picCon h2 {
+  text-align: center;
+  padding: 0.25rem;
+  margin: 0;
+  background-color: rgb(189, 55, 46);
+  color: rgb(255, 255, 255);
+}
+
+.picCon a {
+  text-decoration: none;
+}
+
+.picLinks .picCon:hover {
+  opacity: 0.75;
 }
 
 /* ABOUT US */
@@ -400,6 +450,12 @@ a {
     margin-left: 4.5rem;
     margin-right: 4.5rem;
   }
+
+  .picLinks {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 100px;
+  }
   .images {
     display: none;
   }
@@ -446,6 +502,12 @@ a {
     margin-top: 2rem;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+  }
+
+  .picLinks {
+    display: grid;
+    grid-template-columns: auto;
+    margin-bottom: 100px;
   }
   .images {
     display: none;
