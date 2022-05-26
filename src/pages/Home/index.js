@@ -19,7 +19,7 @@ function Home() {
           experience provides a strong understanding of how to deliver the most
           impactful services for your needs.
         </h5>
-
+        <br />
         <div className="flex">
           <ul>
             <li>
@@ -55,19 +55,27 @@ function Home() {
             First Class Painting LLC has the skill set to offer a wide variety
             of services including, but not limited to both commercial and
             residential interior and exterior painting. We always love a
-            challenge so if you're curious about if we can complete and be a
-            part if your project give us a call at{" "}
-            <a href="tel:9107463360">(910)-746-3360</a> or send us an email at{" "}
-            <a href="mailto:andrewsa@firstclasspaintingllc.org">
-              andrewsa@firstclasspaintingllc.org
-            </a>
-            .
+            challenge so if you're interested in our help for your next project
+            feel free to reach out to us by phone or email.
+            <div>
+              <br />
+              <ul>
+                <li>
+                  <a href="tel:9107463360">(910)-746-3360</a>
+                </li>
+                <li>
+                  <a href="mailto:andrewsa@firstclasspaintingllc.org">
+                    andrewsa@firstclasspaintingllc.org
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <br />
           </h5>
         </div>
 
         <div className="picLinks">
           <div className="picCon">
-            {/* <h2 className="picHeader">Residential Interior</h2> */}
             <a href="/residential/interior">
               <h2 className="picHeader">Residential Interior</h2>
               <img

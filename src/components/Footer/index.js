@@ -4,6 +4,7 @@ function Footer() {
   return (
     <div className="footer">
       <div class="container">
+        <br />
         <div class="footerContent">
           <Logo className="footerLogo" />
         </div>
