@@ -1,11 +1,8 @@
 import Logo from "../Logo";
+import Experience from "../../assets/images/experience.jpg";
+import Insured from "../../assets/images/insured.jpg";
 
 function Nav() {
-  function displayDropDown() {
-    // e.preventDefault();
-    console.log("Working");
-    // document.getElementsByClassName("dropdown-content").style.display = "block";
-  }
   return (
     <div className="nav">
       <div className="mainInfo">
@@ -21,6 +18,10 @@ function Nav() {
               <b>(910)-746-3360</b>
             </h2>
           </div>
+        </div>
+        <div className="experience">
+          <img src={Experience}></img>
+          <img src={Insured}></img>
         </div>
       </div>
       <div class="container-fullwidth">

@@ -1,74 +1,22 @@
-import emailjs from "emailjs-com";
-
 function Contact() {
-  function sendEmail(e) {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        process.env.SERVICE_ID,
-        process.env.TEMPLATE_ID,
-        e.target,
-        process.env.EMAIL_ID
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
-  }
   return (
     <div className="contact">
-      <h1>Contact Us!</h1>
-      <div className="container"></div>
-      <form onSubmit={sendEmail}>
-        <div className="row pt-5 mx-auto">
-          <div className="col-8 form-group mx-auto">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Name"
-              name="name"
-            />
-          </div>
-          <div className="col-8 form-group pt-2 mx-auto">
-            <input
-              type="email"
-              className="form-control"
-              placeholder="Email Address"
-              name="email"
-            />
-          </div>
-          <div className="col-8 form-group pt-2 mx-auto">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Subject"
-              name="subject"
-            />
-          </div>
-          <div className="col-8 form-group pt-2 mx-auto">
-            <textarea
-              className="form-control"
-              id=""
-              cols="30"
-              rows="8"
-              placeholder="Your message..."
-              name="message"
-            />
-          </div>
-          <div className="col-8 pt-3 mx-auto">
-            <input
-              type="submit"
-              className="btn btn-info"
-              value="Send Message"
-            />
-          </div>
-        </div>
+      <form
+        id="contactForm"
+        action="https://formsubmit.co/jacob.nordan113322@gmail.com"
+        method="POST"
+      >
+        <input type="email" name="Email" placeholder="Your Email"></input>
+        <input type="text" name="Name" placeholder="Name" required></input>
+        <input type="subject" name="Subject" placeholder="Subject"></input>
+        <textarea
+          id="description"
+          type="text"
+          name="Description"
+          placeholder="Description"
+          required
+        ></textarea>
+        <button type="submit">Send</button>
       </form>
     </div>
   );

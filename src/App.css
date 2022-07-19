@@ -15,12 +15,24 @@ a {
 .mainInfo {
   width: 100vw;
   display: flex;
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 
 .callForEst {
-  margin-left: 5rem;
-  /* margin-right: 15rem; */
+  margin-left: 3rem;
+  /* margin-right: 3rem; */
+}
+
+.experience {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.experience img {
+  width: 7rem;
+  border-radius: 50%;
 }
 
 .logoInHeader {
@@ -51,11 +63,14 @@ a {
 /* NAVBAR */
 .nav {
   background-color: rgb(116, 35, 38);
+  padding-bottom: 0;
 }
 
 .navbar-nav {
   width: 100vw;
   border-top: 2px solid white;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .container-fluid {
@@ -116,6 +131,10 @@ a {
 .navbar-toggler span {
   margin: 0;
   padding: 0;
+}
+
+.navbar-expand-lg {
+  padding-bottom: 0;
 }
 
 .toggler-icon {
@@ -270,9 +289,10 @@ a {
 
 .picCon {
   height: 100%;
+  cursor: pointer;
   position: relative;
   overflow: hidden;
-  border: 2px solid rgb(189, 55, 46);
+  border: 2px solid rgb(116, 35, 38);
 }
 
 .picLinks img {
@@ -285,7 +305,7 @@ a {
   text-align: center;
   padding: 0.25rem;
   margin: 0;
-  background-color: rgb(189, 55, 46);
+  background-color: rgb(116, 35, 38);
   color: rgb(255, 255, 255);
 }
 
@@ -322,24 +342,31 @@ a {
 }
 
 /* CONTACT */
-.form-control {
-  background-color: rgb(216, 216, 216);
+.contact {
+  height: 100%;
 }
 
-.form-control:focus {
-  border-color: rgb(116, 35, 38);
-  background-color: rgb(216, 216, 216);
-  box-shadow: 0 0 0 0.2rem rgb(116, 35, 38, 0.5);
+#contactForm {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.contact .btn {
-  background-color: rgb(116, 35, 38);
-  color: white;
-  border: black;
+#contactForm input {
+  width: 40%;
+  padding: 0.75rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
 }
 
-.contact .btn:focus {
-  box-shadow: 0 0 0 0.2rem rgb(116, 35, 38, 0.5);
+#contactForm #description {
+  height: 10rem;
+  width: 40%;
+  margin: 0.5rem;
+  padding: 0;
+  border-radius: 0.5rem;
 }
 
 /* FOOTER */
@@ -419,6 +446,10 @@ a {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+  .navbar-expand-lg {
+    padding-bottom: 0.5rem;
+    padding-top: 1rem;
   }
   .headerImg {
     margin-top: -1px;
